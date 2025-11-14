@@ -1,7 +1,7 @@
 ﻿using CSharpFunctionalExtensions;
+using TestTaskValetax.Application.Interfaces;
 using TestTaskValetax.Core.HelperModels;
 using TestTaskValetax.Domain.Models;
-using TestTaskValetax.Infrastructure.Repositories;
 
 namespace TestTaskValetax.Application.Features.Tree.GetTree;
 public class GetTreeHandler

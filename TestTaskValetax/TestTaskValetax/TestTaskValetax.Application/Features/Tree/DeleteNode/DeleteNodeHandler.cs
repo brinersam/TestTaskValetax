@@ -1,6 +1,6 @@
 ﻿using CSharpFunctionalExtensions;
+using TestTaskValetax.Application.Interfaces;
 using TestTaskValetax.Core.HelperModels;
-using TestTaskValetax.Infrastructure.Repositories;
 
 namespace TestTaskValetax.Application.Features.Tree.DeleteNode;
 public class DeleteNodeHandler

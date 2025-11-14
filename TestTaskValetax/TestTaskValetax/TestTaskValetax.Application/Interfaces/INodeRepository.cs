@@ -3,7 +3,7 @@ using TestTaskValetax.Application.Features.Tree.CreateNode;
 using TestTaskValetax.Core.HelperModels;
 using TestTaskValetax.Domain.Models;
 
-namespace TestTaskValetax.Infrastructure.Repositories;
+namespace TestTaskValetax.Application.Interfaces;
 
 public interface INodeRepository
 {

@@ -1,0 +1,25 @@
+services:
+  testtaskvaletax.api:
+    image: ${DOCKER_REGISTRY-}testtaskvaletaxapi
+    container_name: TestTaskValetax.Api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+    ports:
+      - "8080:8080"
+    build:
+      context: .
+      dockerfile: TestTaskValetax.Api/Dockerfile
+
+  testtaskvaletax.postgresql:
+    image: postgres
+    container_name: TestTaskValetax.PostgreSQL
+    environment:
+        - POSTGRES_DB=testtaskvaletax
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASSWORD=postgres
+    ports:
+        - "5432:5432"
+    volumes:
+        - ./postgres-data:/var/lib/postgresql/data
+

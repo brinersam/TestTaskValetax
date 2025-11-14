@@ -11,7 +11,7 @@ public static class DependencyInjection
     public static IServiceCollection AddInfrastructure(this IServiceCollection serviceProvider)
     {
         return serviceProvider
-            .AddDbContext<AppDbContext>((sp,opts) =>
+            .AddDbContext<AppDbContext>((sp, opts) =>
             {
                 var dboptions = sp.GetRequiredService<IOptions<OptionsDatabase>>().Value;
                 AppDbContext.ConfigureDb(opts, dboptions);

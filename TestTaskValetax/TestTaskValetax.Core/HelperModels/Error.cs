@@ -45,7 +45,7 @@ public static class ErrorTypes
     public const string Exception = nameof(Exception);
 
     public const string Secure = nameof(Secure);
-}   
+}
 
 public class ErrorData
 {

@@ -69,7 +69,7 @@ public class JournalRepository : IJournalRepository
             }
         }
 
-        var countSql = 
+        var countSql =
             $"""
             SELECT COUNT (*) FROM
                 "JournalInfos" j

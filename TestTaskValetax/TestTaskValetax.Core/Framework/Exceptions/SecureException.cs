@@ -6,6 +6,6 @@ public class SecureException : Exception
     public SecureException(string? message = null) : base(message)
     { }
 
-    public SecureException(Exception? innerException, string? message = null) : base (message, innerException)
-    {}
+    public SecureException(Exception? innerException, string? message = null) : base(message, innerException)
+    { }
 }

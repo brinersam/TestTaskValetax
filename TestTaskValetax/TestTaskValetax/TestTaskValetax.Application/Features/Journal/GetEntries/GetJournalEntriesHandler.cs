@@ -1,9 +1,7 @@
 ﻿using CSharpFunctionalExtensions;
-using Microsoft.EntityFrameworkCore;
 using TestTaskValetax.Application.Features.Journal.Mapper;
 using TestTaskValetax.Application.Interfaces;
 using TestTaskValetax.Contracts.Journal.Responses;
-using TestTaskValetax.Core.Efcore;
 using TestTaskValetax.Core.HelperModels;
 
 namespace TestTaskValetax.Application.Features.Journal.GetEntries;

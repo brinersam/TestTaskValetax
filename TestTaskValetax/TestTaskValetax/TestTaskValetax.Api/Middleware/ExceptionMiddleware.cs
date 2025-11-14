@@ -42,7 +42,7 @@ public class ExceptionMiddleware : IMiddleware
 
             var entryIdRes = await _journalRepository.AddAsync(new JournalInfo()
             {
-                Context = new() {Body = _contextData.Body, Query = _contextData.QueryKv! },
+                Context = new() { Body = _contextData.Body, Query = _contextData.QueryKv! },
                 CreatedAt = DateTime.UtcNow,
                 Trace = ex.StackTrace!
             });

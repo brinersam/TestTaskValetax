@@ -3,6 +3,6 @@
 namespace TestTaskValetax.Contracts.Journal.Responses;
 
 public record MRange_MJournalInfo(
-    int Skip, 
+    int Skip,
     int Count,
     List<MJournal> Items);
